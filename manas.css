@@ -1,0 +1,86 @@
+.main{
+    display: flex;
+}
+.left{
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.mainRight{
+    
+    width: 80vw;
+    height: 100vh;
+    overflow-y: scroll;
+    
+}
+.right{
+    text-align: center;
+
+    
+   
+}
+.lower h4{
+    font-size: 3vh;
+    padding-left: 2vw;
+    font-weight: lighter;
+}
+.right h1{
+    font-size: 4vw;
+    width:50vw ;
+}
+.right h3{
+    font-size: 1.5vw;
+    font-weight:lighter;
+}
+.right button{
+    font-size: 1.6vw;
+    font-weight: lighter;
+    height: 7vh;
+    width:18vw ;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    
+
+}
+.right button:hover{
+    color: black;
+    background-color: white;
+}
+.rightimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./images/hero1.jpeg);
+}
+*{
+    margin: 0;
+    padding: 0                                                      ;
+}
+.aboutusHeading{
+    text-align: center;
+    margin: 4vh 0vh 2.5vh 0vh;
+    font-size: 3vh;
+    color: gray;
+}
+.cardHead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card{
+    width: 25vw;
+    margin: 1.5vw;
+    
+}
+.card h3{
+    font-size: 4vh;
+    font-weight: 100;
+    margin: 1vw;
+
+
+}
