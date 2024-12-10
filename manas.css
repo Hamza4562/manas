@@ -1,23 +1,34 @@
 .main{
     display: flex;
+    background-color: #f1e9e9;
+    display: flex;
+    justify-content: space-between;
+    
 }
 .left{
-    width: 20vw;
+    width: 19vw;
     height: 100vh;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    background-color:white;
+    
 }
 .mainRight{
     
-    width: 80vw;
+    width: 80.7vw;
     height: 100vh;
     overflow-y: scroll;
+    background-color:white;
+
     
 }
 .right{
+
     text-align: center;
 
     
+
    
 }
 .lower h4{
@@ -84,3 +95,167 @@
 
 
 }
+
+
+.upper img{
+    height: 18vh;
+    width: 19vw;
+    margin-top: 8vw;
+    
+    
+    
+}
+.lower {
+    margin: 4vw;
+    padding-right: 12vw;
+    
+    
+}
+.lower h4{
+    margin: 3vh;
+    
+}
+.lower h4:hover {
+    color: brown;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .contactus{
+    text-align: center;
+    padding: 0vh 3vh;
+
+    
+  }
+  .contactus h1{
+    font-size: large;
+    color: gray;
+    padding: 4vh;
+  }
+  .contactUsLeft{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .contactUsRight{
+    background-color: aqua;
+  }
+  .contactUsRight img{
+    height: 65vh;
+    width: 32vw;
+  }
+  .contactUsLeft img{
+    height: 3vh;
+    width: 1.8vw;
+    padding-right: 1.5vh;
+  }
+  .contactUsParent{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.whatsapp{
+    background-color:#455a64;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    height: 7vh;
+}
+.drop{
+    height: 8vh;
+    width: 13vw;
+    font-size: larger;
+    background-color: white;
+    border-color:black;
+    border-radius: 1vh;
+}
+select{
+    border: none;
+    color: crimson;
+    font-size: 2vh;
+    
+}
+.selectlabel{
+    font-size: 2.5vh;
+}
+.contactus h2{
+    font-size: 4vh;
+    font-weight: 2vh;
+}
+
+

@@ -10,12 +10,12 @@
     <div class="main">
         <div class="left">
             <div class="upper">
-                <img src="" alt="">
+                <img src="./images/logo.jpeg" alt="">
             </div>
             <div class="lower">
                 <h4>Home</h4>
                 <h4>Project</h4>
-                <h4>Contact Us</h4>
+                <h4>ContactUs</h4>
             </div>
 
         </div>
@@ -62,9 +62,123 @@
 
         </div>
     </div>
+    <div class="container">
+        <div class="mySlides">
+          <img src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (1).jpeg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (2).jpeg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (3).jpeg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <img src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (4).jpeg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (5).jpeg" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <img src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (6).jpeg" style="width:100%">
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+       
+      
+        <div class="row">
+          <div class="column">
+            <img class=" " src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (1).jpeg" style="width:100%" onclick="currentSlide(1)" alt="The Woods798">
+          </div>
+          <div class="column">
+            <img class="" src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (2).jpeg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="" src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (3).jpeg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (4).jpeg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+          <div class="column">
+            <img class="" src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (5).jpeg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+          </div>    
+          <div class="column">
+            <img class="" src="./images/WhatsApp Image 2024-11-29 at 10.21.22 AM (6).jpeg"  style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+          </div>
+        </div>
+      </div>
+      <div class="contactus">
+        <h1>CONTACT US</h1>
+        <div class="contactUsParent">
+        <div class="contactUsLeft">
+          <h2>Better yet, see us in person!</h2>
+          <p>We love our customers, so feel free to visit during normal business hours.</p>
+          <div class="whatsapp">
+            <img src="./images/whatsapp icon.png" alt="">
+            <h3>Message us on whatsapp</h3>
+            </div>
+            <h2>Manas group</h2>
+            <h2>Hours</h2>
+          <div class="timing">
+            <label class="selectlabel">open today</label>
+            <select name="" id="">
+              <option>Mon 9:00 AM to 7:00 PM</option>
+              <option>Tue 9:00 AM to 7:00 PM</option>              
+              <option>Wed 9:00 AM to 7:00 PM</option>
+              <option>Thurs 9:00 AM to 7:00 PM</option>
+              <option>Fri 9:00 AM to 7:00 PM</option>
+              <option>Sat 9:00 AM to 7:00 PM</option>
+              <option>Sunday closed </option>
+
+            </select>
+          </div>
+            <button class="drop">Drop us a line</button>
+        </div>
+        <div class="contactUsRight">
+          <img src="./images/house.jpeg" alt="">
+
+        </div>
+      </div>
+        </div>
         </div>
     </div>
     
-    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>  
+
 </body>
 </html>
