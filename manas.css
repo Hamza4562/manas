@@ -258,4 +258,56 @@ select{
     font-weight: 2vh;
 }
 
+.Subscribe{
+  background-image:url(images/lastsection.webp);
+  height: 37vh;
+  width:82vw;
+  margin:9vh 0vh 4vh 3vh;
+  text-align: center;
+  font-size: 3.1vh;
+  font-weight: 2vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+.middlesubscribe{
+  display: flex;
+  justify-content: center;
+  gap:2vh;
+  
+}
+.middlesubscribe input{
+  height: 8vh;
+  width: 38vw;
+  border-radius: 1.3vh 0vh 0vh 1.3vh;
+  border: none;
+  padding-left: 2vh;
+  font-size: 2.1vh;
+  
+}
+.middlesubscribe button{
+  height: 8.5vh;
+  width: 9vw;
+  font-size: 2.5vh;
+  color: white;
+  border: 2px solid white;
+  background-color: transparent ;
+}
+.middlesubscribe button:hover {
+  background-color: white;
+  color: black;
+}
+.middlesubscribe input{
+  box-shadow: 3vh;
+}
+.copy{
+  text-align: center;
+  padding-bottom: 5vh;
+  opacity: 0.5;
+  
+  
+}
 
